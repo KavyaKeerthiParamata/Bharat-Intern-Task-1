@@ -1,0 +1,282 @@
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 500px;
+  background: #462a4c;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: beige;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.btn {
+  text-decoration: none;
+  background: #875992;
+  color: #fff;
+  padding: 10px 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+
+.info {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.info h4  {
+  font-size: 70px;
+  color: #f5f9fa;
+  flex: auto;
+
+}
+
+.info h4 span {
+  color: rgb(217, 238, 122);
+}
+
+.info p  {
+  color: #f0e9e9;
+  line-height: 22px;
+}
+
+.info .btn {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+
+.images {
+  width: 45%;
+  height: 65%;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  flex: auto;
+  margin-right: 40px;
+  margin-bottom: 30px;
+
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 70%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+
+.images:hover .bg {
+  bottom: 60px;
+}
+
+.images:hover .girl {
+  left: 54%;
+}
+
+/* Target all sections */
+section {
+  position: relative;
+}
+
+/* Add underline to the end of each section */
+section:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust this value to change the thickness of the underline */
+  background-color: rgb(217, 238, 122); /* Adjust this value to change the color of the underline */
+}
+
+
+
+/* Education Section */
+.education {
+  background: #462a4c;
+  color: #F5F5DC;
+
+  padding: 50px;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 28px;
+  color: #e2e6de;
+}
+
+.education-item {
+  margin: 20px 0;
+}
+
+.education-item h3 {
+  font-size: 20px;
+  color: #6d8654;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+hr {
+  width: 50%;
+  height: 20px;
+}
+/* Project Section */
+
+.project-card {
+  height: 100;
+  width: 500px;
+  inline-size: none;
+
+  background-color:#875992;
+  border: 1px solid #6e5071;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+   display: flex;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: #6e5071;
+}
+
+.projects {
+
+  background: #462a4c;
+  padding: 50px;
+  text-align: center;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.projects h2 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.project-item {
+  margin: 20px 0;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.project-item p {
+  font-size: 16px;
+  color: #d9dcdd;
+}
+
+/* Skills Section */
+.skills {
+  background: #462a4c;
+  padding: 40px 0;
+  padding: 50px;
+  /* justify-content: space-between; */
+}
+
+.skills h2 {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skills li {
+  font-size: 20px;
+  color: #f0f1ee;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #875992;
+}
+
+/* Contact */
+.icons {
+  margin-left: 0px;
+  background-color: #462a4c;
+
+}
+
+.icons a {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #fbf7fc;
+  transition: all 0.3s ease;
+}
+
+.icons div {
+  margin-left: 8%;
+}
+
+.icons a:hover {
+  color: black;
+}
+
+.icons h2 {
+  font-size: 28px;
+  color: rgb(217, 238, 122);
+
+
+}
